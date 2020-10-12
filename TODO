@@ -1,0 +1,22 @@
+☐ Introduction to Bazel
+  Disclamer:
+    ☐ Not promoting
+    ☐ Not really comparing
+  links:
+    ☐ https://bazel.build/
+    ☐ git@github.com:inanme/bazel-java-docker.git
+    ☐ https://github.com/bazelbuild/rules_docker
+  Simples rules:
+    ☐ hello-world
+  Build Java:
+    ☐ lib
+    ☐ service
+  Docker:
+    ☐ build
+    ☐ test
+    ☐ push
+  IDE integration with Clion:
+  Cheat sheet:
+    - bazel run service:main
+    - bazel run service:image
+    - bazel test service:image_test
