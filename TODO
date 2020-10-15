@@ -1,22 +1,45 @@
 ☐ Introduction to Bazel
-  Disclamer:
-    ☐ Not promoting
-    ☐ Not really comparing
-  links:
-    ☐ https://bazel.build/
-    ☐ git@github.com:inanme/bazel-java-docker.git
-    ☐ https://github.com/bazelbuild/rules_docker
-  Simples rules:
-    ☐ hello-world
+  Disclaimer:
+    ☐ Not really comparing with anything else
+  Links:
+    - https://github.com/inanme/bazel-java-docker
+
+    - https://bazel.build/
+    - https://github.com/bazelbuild/examples/tree/master/rules
+    - https://github.com/bazelbuild/rules_docker
+  Concepts and terminology: 
+    - workspace:
+      - root of a workspace containing file WORKSPACE
+      - usually defines external repositories
+    - package
+      - containes the BUILD file
+      - defines different parts of the project
+      - a container for targets
+    - target
+      - usually one of two principal kinds, files and rules.
+      - declared using Starlark, a domain-specific language
+  101:
+    ☐ brew install bazel
+    ☐ commands
+      - bazel build/test/run @repo//path/to/pkg:target
+    ☐ hello-world @repo//path/to/pkg:target
+    ☐ concat
+      - https://docs.bazel.build/versions/master/configurable-attributes.html
+      - Bazel doesn’t reevaluate the code, it only replays the print events. Regardless of the cache state, you get the same output.
+    ☐ projects using bazel
+      - https://github.com/kubernetes/kubernetes
+      - https://github.com/tensorflow/tensorflow
+      - https://github.com/abseil/abseil-cpp
   Build Java:
     ☐ lib
     ☐ service
+      - visualise dependencies : http://www.webgraphviz.com/
   Docker:
-    ☐ build
-    ☐ test
-    ☐ push
   IDE integration with Clion:
+  Discussion:
   Cheat sheet:
+    - bazel run lib:compare-test
     - bazel run service:main
     - bazel run service:image
     - bazel test service:image_test
+    - bazel query  --notool_deps --noimplicit_deps "deps(@//service:main)" --output graph

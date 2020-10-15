@@ -1,3 +1,6 @@
+"""
+A Simple rule
+"""
 def _impl(ctx):
     print("hello " + ctx.attr.to)
     ctx.actions.write(output = ctx.outputs.out, 

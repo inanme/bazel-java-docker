@@ -4,3 +4,4 @@ bazel-java-maven
 bazel-out
 bazel-testlogs
 bazel-bazel-java-docker
+page.txt
